@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -18,14 +13,49 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.chess-board {
+  border-spacing: 0;
+  border-collapse: collapse;
 }
 
-.heart {
-  color: #ff0000;
+.chess-board th+th {
+  border-bottom: 1px solid #000;
 }
 
-.small {
-  font-size: 0.75rem;
+.chess-board th:first-child,
+.chess-board td:last-child {
+  border-right: 1px solid #000;
+}
+
+.chess-board tr:last-child td {
+  border-bottom: 1px solid;
+}
+
+.chess-board th:empty {
+  border: none;
+}
+
+.chess-board th {
+  padding: .5em;
+}
+
+.chess-board td {
+  border: 1px solid;
+  width: 2em;
+  height: 2em;
+  color: #000;
+}
+
+.chess-board .light {
+  background: #eee;
+}
+
+.chess-board .dark {
+  background: #aaa;
+}
+
+.chess-board td th {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
