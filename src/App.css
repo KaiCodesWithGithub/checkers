@@ -1,3 +1,7 @@
+:root {
+  --tokenSize: calc(2em - 6px);
+}
+
 .App {
   text-align: center;
 }
@@ -41,7 +45,7 @@
 
 .chess-board td {
   border: 1px solid;
-  width: 2em;
+  width: calc(2em - 2px);
   height: 2em;
   color: #000;
 }
